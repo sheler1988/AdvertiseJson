@@ -1,0 +1,13 @@
+F:\MyProjects\AdvertiseJson\PropertyAdvertiseSystem\RealEstateLibrary\bin\Debug\net8.0\RealEstateLibrary.deps.json
+F:\MyProjects\AdvertiseJson\PropertyAdvertiseSystem\RealEstateLibrary\bin\Debug\net8.0\RealEstateLibrary.dll
+F:\MyProjects\AdvertiseJson\PropertyAdvertiseSystem\RealEstateLibrary\bin\Debug\net8.0\RealEstateLibrary.pdb
+F:\MyProjects\AdvertiseJson\PropertyAdvertiseSystem\RealEstateLibrary\obj\Debug\net8.0\RealEstateLibrary.GeneratedMSBuildEditorConfig.editorconfig
+F:\MyProjects\AdvertiseJson\PropertyAdvertiseSystem\RealEstateLibrary\obj\Debug\net8.0\RealEstateLibrary.AssemblyInfoInputs.cache
+F:\MyProjects\AdvertiseJson\PropertyAdvertiseSystem\RealEstateLibrary\obj\Debug\net8.0\RealEstateLibrary.AssemblyInfo.cs
+F:\MyProjects\AdvertiseJson\PropertyAdvertiseSystem\RealEstateLibrary\obj\Debug\net8.0\RealEstateLibrary.csproj.CoreCompileInputs.cache
+F:\MyProjects\AdvertiseJson\PropertyAdvertiseSystem\RealEstateLibrary\obj\Debug\net8.0\RealEstateLibrary.sourcelink.json
+F:\MyProjects\AdvertiseJson\PropertyAdvertiseSystem\RealEstateLibrary\obj\Debug\net8.0\RealEstateLibrary.dll
+F:\MyProjects\AdvertiseJson\PropertyAdvertiseSystem\RealEstateLibrary\obj\Debug\net8.0\refint\RealEstateLibrary.dll
+F:\MyProjects\AdvertiseJson\PropertyAdvertiseSystem\RealEstateLibrary\obj\Debug\net8.0\RealEstateLibrary.pdb
+F:\MyProjects\AdvertiseJson\PropertyAdvertiseSystem\RealEstateLibrary\obj\Debug\net8.0\ref\RealEstateLibrary.dll
+F:\MyProjects\AdvertiseJson\PropertyAdvertiseSystem\RealEstateLibrary\obj\Debug\net8.0\RealEstateLibrary.csproj.AssemblyReference.cache
