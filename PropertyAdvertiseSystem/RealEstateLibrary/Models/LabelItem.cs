@@ -8,9 +8,13 @@ namespace RealEstateLibrary.Models;
 
 public class LabelItem : BaseItem
 {
-    public int FontSize { get; set; }
+	// اندازه فونت برای LabelItem
+	public int FontSize { get; set; }
+
+	// فرمت آیکون مربوط به LabelItem
 	public IconFormat Icon { get; set; }
 
+	// دایرکتوری آیکون‌ها
 	private string iconDirectory;
 
 	// سازنده برای تعیین مسیر دایرکتوری آیکون‌ها
@@ -19,9 +23,10 @@ public class LabelItem : BaseItem
 		this.iconDirectory = iconDirectory;
 	}
 
+	// متد اعتبارسنجی برای LabelItem
 	public override bool Validate()
 	{
-		// اعتبارسنجی برای LabelItem
+		// اعتبارسنجی برای ویژگی‌های پایه
 		if (!base.Validate())
 			return false;
 
@@ -41,31 +46,36 @@ public class LabelItem : BaseItem
 
 		try
 		{
-			if (Icon == default(IconFormat)) // بررسی اینکه آیکون تعیین شده باشد
+			// بررسی اینکه آیکون تعیین شده باشد
+			if (Icon == default(IconFormat))
 			{
 				ValidationError = "آیکون الزامی است.";
 				return false;
 			}
 
+			// اعتبارسنجی فرمت آیکون
 			if (!ValidateIconFormat())
 			{
 				return false;
 			}
 
+			// بررسی اینکه فایل آیکون وجود دارد
 			return CheckIconExists();
 		}
-
 		catch (Exception ex)
 		{
 			ValidationError = $"خطا در اعتبارسنجی آیکون: {ex.Message}";
 			return false;
 		}
 	}
+
+	// متد برای اعتبارسنجی فرمت آیکون
 	private bool ValidateIconFormat()
 	{
-		string iconExtension = $".{Icon.ToString().ToLower()}";
-		string[] validExtensions = { ".png", ".svg", ".jpg", ".jpeg" };
+		string iconExtension = $".{Icon.ToString().ToLower()}"; // تبدیل فرمت آیکون به رشته
+		string[] validExtensions = { ".png", ".svg", ".jpg", ".jpeg" }; // فرمت‌های معتبر
 
+		// بررسی اینکه فرمت آیکون در لیست فرمت‌های معتبر وجود دارد
 		if (!validExtensions.Contains(iconExtension))
 		{
 			ValidationError = "فرمت آیکون معتبر نیست. لطفاً از فرمت‌های PNG، SVG، JPG یا JPEG استفاده کنید.";
@@ -75,12 +85,14 @@ public class LabelItem : BaseItem
 		return true;
 	}
 
+	// متد برای بررسی وجود فایل آیکون
 	private bool CheckIconExists()
 	{
 		// مسیر فایل آیکون با نام و فرمت صحیح
 		string iconFileName = $"{Icon.ToString().ToLower()}";
 		string iconPath = System.IO.Path.Combine(iconDirectory, iconFileName);
 
+		// بررسی اینکه فایل آیکون وجود دارد
 		if (!System.IO.File.Exists(iconPath))
 		{
 			ValidationError = "فایل آیکون پیدا نشد.";

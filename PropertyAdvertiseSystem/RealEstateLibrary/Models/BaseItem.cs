@@ -6,17 +6,61 @@ using System.Threading.Tasks;
 
 namespace RealEstateLibrary.Models;
 
+/// <summary>
+/// کلاس پایه برای تمام آیتم‌ها که ویژکی‌های مشترک و متدهای اعتبارسنجی را فراهم می‌کند.
+/// </summary>
 public class BaseItem : IValidatable
 {
-    public String Type { get; set; }
-    public String Text { get; set; }
-    public bool IsVisible { get; set; } = true;
-    public string ValidationError { get; set; }
+	/// <summary>
+	/// نوع آیتم (مثلاً InputItem، LabelItem و غیره).
+	/// </summary>
+	public String Type { get; set; }
 
+	/// <summary>
+	/// متن مربوط به آیتم.
+	/// </summary>
+	public String Text { get; set; }
 
-    // بررسی ویژکی‌های پایه که ممکن است برای تمام آیتم‌ها معتبر باشد
-    public virtual bool Validate()
-    {
-        return !string.IsNullOrEmpty(Type) && !string.IsNullOrEmpty(Text);
-    }
+	/// <summary>
+	/// مشخص می‌کند که آیا آیتم قابل مشاهده است یا خیر.
+	/// </summary>
+	public bool IsVisible { get; set; } = true;
+
+	/// <summary>
+	/// پیام خطا در صورت عدم اعتبارسنجی.
+	/// </summary>
+	public string ValidationError { get; set; }
+
+	/// <summary>
+	/// بررسی اعتبار ویژکی‌های پایه که ممکن است برای تمام آیتم‌ها معتبر باشد.
+	/// </summary>
+	/// <returns>برمی‌کرداند که آیا اعتبارسنجی موفق بود یا خیر.</returns>
+	public virtual bool Validate()
+	{
+		if (string.IsNullOrEmpty(Type))
+		{
+			ValidationError = "نوع آیتم الزامی است.";
+			return false;
+		}
+
+		if (string.IsNullOrEmpty(Text))
+		{
+			ValidationError = "متن آیتم الزامی است.";
+			return false;
+		}
+
+		return true;
+	}
+
+	/// <summary>
+	/// نمایش اطلاعات آیتم به صورت یک رشته.
+	/// </summary>
+	/// <returns>رشته‌ای که شامل اطلاعات آیتم است.</returns>
+	public override string ToString()
+	{
+		return $"{Type}: {Text} (Visible: {IsVisible})";
+	}
 }
+
+
+

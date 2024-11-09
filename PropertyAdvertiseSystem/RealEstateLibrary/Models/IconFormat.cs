@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace RealEstateLibrary.Models;
 
+// این enum انواع فرمت‌های آیکون را تعریف می‌کند
 public enum IconFormat
 {
 	Png,

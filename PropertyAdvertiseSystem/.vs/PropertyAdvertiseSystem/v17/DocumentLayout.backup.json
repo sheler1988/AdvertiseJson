@@ -7,28 +7,44 @@
       "RelativeMoniker": "D:0:0:{2E80B6E0-77C2-4BF6-99B0-7B002274E14D}|RealEstateConsoleApp\\RealEstateConsoleApp.csproj|solutionrelative:realestateconsoleapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4B9B54AB-BEF7-4909-9C2D-C6D02B703F45}|RealEstateLibrary\\RealEstateLibrary.csproj|f:\\myprojects\\advertisejson\\propertyadvertisesystem\\realestatelibrary\\models\\baseitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B9B54AB-BEF7-4909-9C2D-C6D02B703F45}|RealEstateLibrary\\RealEstateLibrary.csproj|solutionrelative:realestatelibrary\\models\\baseitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4B9B54AB-BEF7-4909-9C2D-C6D02B703F45}|RealEstateLibrary\\RealEstateLibrary.csproj|f:\\myprojects\\advertisejson\\propertyadvertisesystem\\realestatelibrary\\models\\readdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B9B54AB-BEF7-4909-9C2D-C6D02B703F45}|RealEstateLibrary\\RealEstateLibrary.csproj|solutionrelative:realestatelibrary\\models\\readdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4B9B54AB-BEF7-4909-9C2D-C6D02B703F45}|RealEstateLibrary\\RealEstateLibrary.csproj|f:\\myprojects\\advertisejson\\propertyadvertisesystem\\realestatelibrary\\models\\iconformat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B9B54AB-BEF7-4909-9C2D-C6D02B703F45}|RealEstateLibrary\\RealEstateLibrary.csproj|solutionrelative:realestatelibrary\\models\\iconformat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4B9B54AB-BEF7-4909-9C2D-C6D02B703F45}|RealEstateLibrary\\RealEstateLibrary.csproj|f:\\myprojects\\advertisejson\\propertyadvertisesystem\\realestatelibrary\\models\\ivalidatable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B9B54AB-BEF7-4909-9C2D-C6D02B703F45}|RealEstateLibrary\\RealEstateLibrary.csproj|solutionrelative:realestatelibrary\\models\\ivalidatable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4B9B54AB-BEF7-4909-9C2D-C6D02B703F45}|RealEstateLibrary\\RealEstateLibrary.csproj|f:\\myprojects\\advertisejson\\propertyadvertisesystem\\realestatelibrary\\models\\inputitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B9B54AB-BEF7-4909-9C2D-C6D02B703F45}|RealEstateLibrary\\RealEstateLibrary.csproj|solutionrelative:realestatelibrary\\models\\inputitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4B9B54AB-BEF7-4909-9C2D-C6D02B703F45}|RealEstateLibrary\\RealEstateLibrary.csproj|f:\\myprojects\\advertisejson\\propertyadvertisesystem\\realestatelibrary\\models\\advertisegroup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B9B54AB-BEF7-4909-9C2D-C6D02B703F45}|RealEstateLibrary\\RealEstateLibrary.csproj|solutionrelative:realestatelibrary\\models\\advertisegroup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4B9B54AB-BEF7-4909-9C2D-C6D02B703F45}|RealEstateLibrary\\RealEstateLibrary.csproj|f:\\myprojects\\advertisejson\\propertyadvertisesystem\\realestatelibrary\\models\\labelitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4B9B54AB-BEF7-4909-9C2D-C6D02B703F45}|RealEstateLibrary\\RealEstateLibrary.csproj|solutionrelative:realestatelibrary\\models\\labelitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{4B9B54AB-BEF7-4909-9C2D-C6D02B703F45}|RealEstateLibrary\\RealEstateLibrary.csproj|f:\\myprojects\\advertisejson\\propertyadvertisesystem\\realestatelibrary\\models\\inputitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B9B54AB-BEF7-4909-9C2D-C6D02B703F45}|RealEstateLibrary\\RealEstateLibrary.csproj|solutionrelative:realestatelibrary\\models\\inputitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B9B54AB-BEF7-4909-9C2D-C6D02B703F45}|RealEstateLibrary\\RealEstateLibrary.csproj|f:\\myprojects\\advertisejson\\propertyadvertisesystem\\realestatelibrary\\models\\iconformat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B9B54AB-BEF7-4909-9C2D-C6D02B703F45}|RealEstateLibrary\\RealEstateLibrary.csproj|solutionrelative:realestatelibrary\\models\\iconformat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B9B54AB-BEF7-4909-9C2D-C6D02B703F45}|RealEstateLibrary\\RealEstateLibrary.csproj|f:\\myprojects\\advertisejson\\propertyadvertisesystem\\realestatelibrary\\models\\clickpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B9B54AB-BEF7-4909-9C2D-C6D02B703F45}|RealEstateLibrary\\RealEstateLibrary.csproj|solutionrelative:realestatelibrary\\models\\clickpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4B9B54AB-BEF7-4909-9C2D-C6D02B703F45}|RealEstateLibrary\\RealEstateLibrary.csproj|f:\\myprojects\\advertisejson\\propertyadvertisesystem\\realestatelibrary\\models\\menuitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4B9B54AB-BEF7-4909-9C2D-C6D02B703F45}|RealEstateLibrary\\RealEstateLibrary.csproj|solutionrelative:realestatelibrary\\models\\menuitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B9B54AB-BEF7-4909-9C2D-C6D02B703F45}|RealEstateLibrary\\RealEstateLibrary.csproj|f:\\myprojects\\advertisejson\\propertyadvertisesystem\\realestatelibrary\\models\\item .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B9B54AB-BEF7-4909-9C2D-C6D02B703F45}|RealEstateLibrary\\RealEstateLibrary.csproj|solutionrelative:realestatelibrary\\models\\item .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B9B54AB-BEF7-4909-9C2D-C6D02B703F45}|RealEstateLibrary\\RealEstateLibrary.csproj|f:\\myprojects\\advertisejson\\propertyadvertisesystem\\realestatelibrary\\models\\ivalidatable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B9B54AB-BEF7-4909-9C2D-C6D02B703F45}|RealEstateLibrary\\RealEstateLibrary.csproj|solutionrelative:realestatelibrary\\models\\ivalidatable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B9B54AB-BEF7-4909-9C2D-C6D02B703F45}|RealEstateLibrary\\RealEstateLibrary.csproj|f:\\myprojects\\advertisejson\\propertyadvertisesystem\\realestatelibrary\\models\\baseitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B9B54AB-BEF7-4909-9C2D-C6D02B703F45}|RealEstateLibrary\\RealEstateLibrary.csproj|solutionrelative:realestatelibrary\\models\\baseitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 13,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,33 +70,72 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "F:\\MyProjects\\AdvertiseJson\\PropertyAdvertiseSystem\\RealEstateConsoleApp\\Program.cs",
-              "RelativeDocumentMoniker": "RealEstateConsoleApp\\Program.cs",
-              "ToolTip": "F:\\MyProjects\\AdvertiseJson\\PropertyAdvertiseSystem\\RealEstateConsoleApp\\Program.cs*",
-              "RelativeToolTip": "RealEstateConsoleApp\\Program.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAuAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "ReadData.cs",
+              "DocumentMoniker": "F:\\MyProjects\\AdvertiseJson\\PropertyAdvertiseSystem\\RealEstateLibrary\\Models\\ReadData.cs",
+              "RelativeDocumentMoniker": "RealEstateLibrary\\Models\\ReadData.cs",
+              "ToolTip": "F:\\MyProjects\\AdvertiseJson\\PropertyAdvertiseSystem\\RealEstateLibrary\\Models\\ReadData.cs",
+              "RelativeToolTip": "RealEstateLibrary\\Models\\ReadData.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAwAsAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T11:31:53.874Z",
+              "WhenOpened": "2024-11-05T14:02:54.4Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Item .cs",
+              "DocumentMoniker": "F:\\MyProjects\\AdvertiseJson\\PropertyAdvertiseSystem\\RealEstateLibrary\\Models\\Item .cs",
+              "RelativeDocumentMoniker": "RealEstateLibrary\\Models\\Item .cs",
+              "ToolTip": "F:\\MyProjects\\AdvertiseJson\\PropertyAdvertiseSystem\\RealEstateLibrary\\Models\\Item .cs",
+              "RelativeToolTip": "RealEstateLibrary\\Models\\Item .cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T12:40:03.067Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ClickPage.cs",
+              "DocumentMoniker": "F:\\MyProjects\\AdvertiseJson\\PropertyAdvertiseSystem\\RealEstateLibrary\\Models\\ClickPage.cs",
+              "RelativeDocumentMoniker": "RealEstateLibrary\\Models\\ClickPage.cs",
+              "ToolTip": "F:\\MyProjects\\AdvertiseJson\\PropertyAdvertiseSystem\\RealEstateLibrary\\Models\\ClickPage.cs",
+              "RelativeToolTip": "RealEstateLibrary\\Models\\ClickPage.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAxwB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T12:33:37.667Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "AdvertiseGroup.cs",
+              "DocumentMoniker": "F:\\MyProjects\\AdvertiseJson\\PropertyAdvertiseSystem\\RealEstateLibrary\\Models\\AdvertiseGroup.cs",
+              "RelativeDocumentMoniker": "RealEstateLibrary\\Models\\AdvertiseGroup.cs",
+              "ToolTip": "F:\\MyProjects\\AdvertiseJson\\PropertyAdvertiseSystem\\RealEstateLibrary\\Models\\AdvertiseGroup.cs",
+              "RelativeToolTip": "RealEstateLibrary\\Models\\AdvertiseGroup.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAgwDQAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T12:31:39.944Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "IconFormat.cs",
               "DocumentMoniker": "F:\\MyProjects\\AdvertiseJson\\PropertyAdvertiseSystem\\RealEstateLibrary\\Models\\IconFormat.cs",
               "RelativeDocumentMoniker": "RealEstateLibrary\\Models\\IconFormat.cs",
               "ToolTip": "F:\\MyProjects\\AdvertiseJson\\PropertyAdvertiseSystem\\RealEstateLibrary\\Models\\IconFormat.cs",
               "RelativeToolTip": "RealEstateLibrary\\Models\\IconFormat.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-04T13:48:11.495Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "IValidatable.cs",
               "DocumentMoniker": "F:\\MyProjects\\AdvertiseJson\\PropertyAdvertiseSystem\\RealEstateLibrary\\Models\\IValidatable.cs",
               "RelativeDocumentMoniker": "RealEstateLibrary\\Models\\IValidatable.cs",
@@ -99,48 +154,61 @@
               "RelativeDocumentMoniker": "RealEstateLibrary\\Models\\InputItem.cs",
               "ToolTip": "F:\\MyProjects\\AdvertiseJson\\PropertyAdvertiseSystem\\RealEstateLibrary\\Models\\InputItem.cs",
               "RelativeToolTip": "RealEstateLibrary\\Models\\InputItem.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAQwC0AAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAAAsAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-04T10:41:23.388Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "LabelItem.cs",
               "DocumentMoniker": "F:\\MyProjects\\AdvertiseJson\\PropertyAdvertiseSystem\\RealEstateLibrary\\Models\\LabelItem.cs",
               "RelativeDocumentMoniker": "RealEstateLibrary\\Models\\LabelItem.cs",
               "ToolTip": "F:\\MyProjects\\AdvertiseJson\\PropertyAdvertiseSystem\\RealEstateLibrary\\Models\\LabelItem.cs",
               "RelativeToolTip": "RealEstateLibrary\\Models\\LabelItem.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAkwAgAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwB4AAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-04T10:39:01.47Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "MenuItem.cs",
               "DocumentMoniker": "F:\\MyProjects\\AdvertiseJson\\PropertyAdvertiseSystem\\RealEstateLibrary\\Models\\MenuItem.cs",
               "RelativeDocumentMoniker": "RealEstateLibrary\\Models\\MenuItem.cs",
               "ToolTip": "F:\\MyProjects\\AdvertiseJson\\PropertyAdvertiseSystem\\RealEstateLibrary\\Models\\MenuItem.cs",
               "RelativeToolTip": "RealEstateLibrary\\Models\\MenuItem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-04T10:24:56.133Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 10,
               "Title": "BaseItem.cs",
               "DocumentMoniker": "F:\\MyProjects\\AdvertiseJson\\PropertyAdvertiseSystem\\RealEstateLibrary\\Models\\BaseItem.cs",
               "RelativeDocumentMoniker": "RealEstateLibrary\\Models\\BaseItem.cs",
               "ToolTip": "F:\\MyProjects\\AdvertiseJson\\PropertyAdvertiseSystem\\RealEstateLibrary\\Models\\BaseItem.cs",
               "RelativeToolTip": "RealEstateLibrary\\Models\\BaseItem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACoAAAAAAAAAAAAowCQAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-04T10:24:33.568Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\MyProjects\\AdvertiseJson\\PropertyAdvertiseSystem\\RealEstateConsoleApp\\Program.cs",
+              "RelativeDocumentMoniker": "RealEstateConsoleApp\\Program.cs",
+              "ToolTip": "F:\\MyProjects\\AdvertiseJson\\PropertyAdvertiseSystem\\RealEstateConsoleApp\\Program.cs",
+              "RelativeToolTip": "RealEstateConsoleApp\\Program.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAABEAAABqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T11:31:53.874Z",
               "EditorCaption": ""
             }
           ]

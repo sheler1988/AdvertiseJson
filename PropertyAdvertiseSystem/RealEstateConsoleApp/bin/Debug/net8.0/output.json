@@ -1,0 +1,40 @@
+{
+  "AdvertiseGroup": {
+    "Items": {
+      "item1": {
+        "Description": "This is the main menu item.",
+        "ClickPage": null,
+        "Type": "Menu",
+        "Text": "Main Menu",
+        "IsVisible": true,
+        "ValidationError": null
+      }
+    }
+  },
+  "ClickPage": {
+    "Items": [
+      {
+        "Description": null,
+        "ClickPage": null,
+        "Type": "Input",
+        "Text": "Input Field",
+        "IsVisible": true,
+        "ValidationError": null
+      }
+    ]
+  },
+  "AllItems": [
+    {
+      "Type": "Menu",
+      "Text": "Main Menu",
+      "IsVisible": true,
+      "ValidationError": null
+    },
+    {
+      "Type": "Input",
+      "Text": "Input Field",
+      "IsVisible": true,
+      "ValidationError": null
+    }
+  ]
+}

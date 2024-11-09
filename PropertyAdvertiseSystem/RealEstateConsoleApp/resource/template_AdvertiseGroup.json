@@ -1,0 +1,277 @@
+{
+    "AdvertiseGroup": {
+        "Item1": {
+            "Type": "Menu",
+            "TEXT": "املاک و مستغلات",
+            "click_page": {
+                "Item1": {
+                    "Type": "Menu",
+                    "TEXT": "اجاره مسکونی",
+                    "click_page": {
+                        "Item1": {
+                            "Type": "Menu",
+                            "TEXT": "اجاره آپارتمان",
+                            "click_page": {
+                                "Item1": {
+                                    "Type": "Label",
+                                    "TEXT": "مشخصات کلی",
+                                    "FontSize": 10
+                                },
+                                "Item2": {
+                                    "Type": "Item",
+                                    "Enable": true,
+                                    "visible": true,
+                                    "Columns": {
+                                        "Right": "دسته بندی",
+                                        "Left": "اجاره آپارتمان"
+                                    }
+                                },
+                                "Item3": {
+                                    "Type": "Item",
+                                    "Enable": true,
+                                    "Columns": {
+                                        "Right": "محدوده آگهی",
+                                        "Left": "Location"
+                                    }
+                                },
+                                "Item4": {
+                                    "Type": "Label",
+                                    "icon": "fa fa-information",
+                                    "TEXT": "محدوده آگهی",
+                                    "FontSize": 8
+                                },
+                                "Item5": {
+                                    "Type": "Label",
+                                    "TEXT": "توجه : در صورت ....",
+                                    "FontSize": 8
+                                },
+                                "Item6": {
+                                    "Type": "Label",
+                                    "TEXT": "ویژگی ها",
+                                    "FontSize": 10
+                                },
+                                "Item7": {
+                                    "Type": "Item",
+                                    "Enable": true,
+                                    "Columns": {
+                                        "Right": "متراژ",
+                                        "Left": "تعیین"
+                                    },
+                                    "click_page": {
+                                        "Type": "Page",
+                                        "Item1": {
+                                            "Type": "Label",
+                                            "TEXT": "متراژ",
+                                            "FontSize": 10
+                                        },
+                                        "Item2": {
+                                            "Type": "InputNumber",
+                                            "Placeholder": "",
+                                            "DefaultValue": "",
+                                            "ValueRange": "[]",
+                                            "Optional": false,
+                                            "ValidationError": "تعیین کردن متراژ الزامی است"
+                                        }
+                                    }
+                                },
+                                "Item8": {
+                                    "Type": "Item",
+                                    "Enable": true,
+                                    "Columns": {
+                                        "Right": "ودیعه و اجاره ماهانه",
+                                        "Left": "تعیین"
+                                    },
+                                    "click_page": {
+                                        "Type": "Page",
+                                        "Item1": {
+                                            "Type": "Label",
+                                            "TEXT": "ودیعه (تومان)"
+                                        },
+                                        "Item2": {
+                                            "Type": "InputNumber",
+                                            "Placeholder": "مثال : 50.000.000",
+                                            "DefaultValue": "",
+                                            "ValueRange": "[1000000,~]",
+                                            "Optional": false,
+                                            "ValidationError": "تعیین کردن متراژ الزامی است"
+                                        },
+                                        "Item3": {
+                                            "Type": "Label",
+                                            "TEXT": "اجاره ماهانه (تومان)"
+                                        },
+                                        "Item4": {
+                                            "Type": "InputNumber",
+                                            "Placeholder": "مثال : 1.000.000",
+                                            "ValueRange": "[100000,~]",
+                                            "DefaultValue": "",
+                                            "Optional": false,
+                                            "ValidationError": "وارد کردن این مورد الزامی است"
+                                        },
+                                        "Item5": {
+                                            "Type": "Label",
+                                            "TEXT": "در صورتی که ..."
+                                        },
+                                        "Item6": {
+                                            "Type": "Line"
+                                        },
+                                        "Item7": {
+                                            "Type": "CheckBox",
+                                            "EnableRule": "Item4.Value>0 & Item2.Value>0",
+                                            "DefaultValue": false,
+                                            "Optional": false
+                                        },
+                                        "Item8": {
+                                            "Type": "Label",
+                                            "VisibleRule": "(Item4.Range=false | Item2.Range=false) & Item7.Value=false",
+                                            "TEXT": "برای فعال کردن ...."
+                                        },
+                                        "Item9": {
+                                            "Type": "Label",
+                                            "VisibleRule": "Item4.Range=true & Item2.Range=true & Item7.Value=false",
+                                            "TEXT": "برای تبدیل ودیعه ..."
+                                        },
+                                        "Item10": {
+                                            "Type": "Label",
+                                            "TEXT": "نرخ رایج مبنا",
+                                            "VisibleRule": "Item7.Value=true"
+                                        },
+                                        "Item11": {
+                                            "Type": "Line"
+                                        },
+                                        "Item12": {
+                                            "Type": "Label",
+                                            "TEXT": "تبدیل مبلغ ودیعه (تومان)",
+                                            "VisibleRule": "Item7.Value=true"
+                                        },
+                                        "Item13": {
+                                            "Type": "InputNumber",
+                                            "Placeholder": "مثال : 50.000.000",
+                                            "ValueRange": "",
+                                            "DefaultValue": "",
+                                            "Optional": false,
+                                            "ValidationError": "وارد کردن این مورد الزامی است",
+                                            "VisibleRule": "Item7.Value=true"
+                                        },
+                                        "Item14": {
+                                            "Type": "Label",
+                                            "TEXT": "تبدیل مبلغ اجاره ماهیانه(تومان)",
+                                            "VisibleRule": "Item7.Value=true"
+                                        },
+                                        "Item15": {
+                                            "Type": "InputNumber",
+                                            "Placeholder": "مثال : 1.000.000",
+                                            "ValueRange": "",
+                                            "DefaultValue": "",
+                                            "Optional": false,
+                                            "ValidationError": "وارد کردن این مورد الزامی است",
+                                            "VisibleRule": "Item7.Value=true"
+                                        }
+                                    }
+                                },
+                                "Item9": {
+                                    "Type": "Item",
+                                    "Enable": true,
+                                    "Columns": {
+                                        "Right": "تعداد اتاق",
+                                        "Left": "انتخاب"
+                                    }
+                                },
+                                "Item10": {
+                                    "Type": "Item",
+                                    "Enable": true,
+                                    "Columns": {
+                                        "Right": "سال ساخت",
+                                        "Left": "انتخاب"
+                                    }
+                                },
+                                "Item11": {
+                                    "Type": "Item",
+                                    "Enable": true,
+                                    "Columns": {
+                                        "Right": "طبقه",
+                                        "Left": "انتخاب"
+                                    }
+                                },
+                                "Item12": {
+                                    "Type": "Label",
+                                    "TEXT": "امکانات",
+                                    "FontSize": 10
+                                },
+                                "Item13": {
+                                    "Type": "Item",
+                                    "Enable": true,
+                                    "Columns": {
+                                        "Right": "آسانسور",
+                                        "Left": "انتخاب"
+                                    }
+                                },
+                                "Item14": {
+                                    "Type": "Item",
+                                    "Enable": true,
+                                    "Columns": {
+                                        "Right": "پارکینگ",
+                                        "Left": "انتخاب"
+                                    }
+                                },
+                                "Item15": {
+                                    "Type": "Item",
+                                    "Enable": true,
+                                    "Columns": {
+                                        "Right": "انباری",
+                                        "Left": "انتخاب"
+                                    }
+                                },
+                                "Item16": {
+                                    "Type": "Item",
+                                    "Enable": true,
+                                    "Columns": {
+                                        "Right": "سایر ویژگی ها و امکانات",
+                                        "Left": "انتخاب"
+                                    }
+                                },
+                                "Item17": {
+                                    "Type": "Label",
+                                    "TEXT": "اطلاعات ملک",
+                                    "FontSize": 10
+                                },
+                                "Item18": {
+                                    "Type": "Label",
+                                    "TEXT": "بنا بر ....",
+                                    "FontSize": 8
+                                },
+                                "Item19": {
+                                    "Type": "Text",
+                                    "TEXT": "کدملی"
+                                },
+                                "Item20": {
+                                    "Type": "Text",
+                                    "TEXT": "کدپستی"
+                                }
+                            }
+                        },
+                        "Item2": {
+                            "Type": "Menu",
+                            "TEXT": "اجاره خانه و ویلا",
+                            "click_page": {}
+                        }
+                    }
+                },
+                "Item2": {
+                    "Type": "Menu",
+                    "TEXT": "اجاره تجاری",
+                    "click_page": {}
+                },
+                "Item3": {
+                    "Type": "Menu",
+                    "TEXT": "فروش مسکونی",
+                    "click_page": {}
+                }
+            }
+        },
+        "Item2": {
+            "Type": "Menu",
+            "TEXT": "وسایل نقلیه",
+            "click_page": {}
+        }
+    }
+}

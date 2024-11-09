@@ -6,59 +6,101 @@ using System.Threading.Tasks;
 
 namespace RealEstateLibrary.Models;
 
-// برای آیتم‌هایی که از نوع ورودی عددی هستن مثل متراژ یا مبلغ اجاره 
-public class InputItem : BaseItem, IValidatable
+/// <summary>
+/// کلاس برای آیتم‌هایی که از نوع ورودی عددی هستند مثل متراژ یا مبلغ اجاره.
+/// </summary>
+public class InputItem : Item, IValidatable
 {
-    public string Placeholder { get; set; }
-    public string DefaultValue { get; set; }
-    public string ValueRange { get; set; }
-    public bool Optional { get; set; }
-    public string ValidationError { get; set; }
-    public string Value { get; set; }
+	/// <summary>
+	/// متنی که در ورودی نمایش داده می‌شود زمانی که کاربر چیزی وارد نکرده است.
+	/// </summary>
+	public string Placeholder { get; set; }
 
+	/// <summary>
+	/// مقدار پیش‌فرض ورودی.
+	/// </summary>
+	public string DefaultValue { get; set; }
 
-	// بررسی اینکه ورودی معتبر و در محدوده مشخص شده باشد
-	public bool Validate()
+	/// <summary>
+	/// محدوده مجاز ورودی به صورت رشته، مانند "[0,100]".
+	/// </summary>
+	public string ValueRange { get; set; }
+
+	/// <summary>
+	/// مشخص می‌کند که آیا ورودی اجباری است یا اختیاری.
+	/// </summary>
+	public bool Optional { get; set; }
+
+	/// <summary>
+	/// خطای اعتبارسنجی در صورت بروز مشکل.
+	/// </summary>
+	public string ValidationError { get; set; }
+
+	/// <summary>
+	/// مقدار ورودی که کاربر وارد می‌کند.
+	/// </summary>
+	public string Value { get; set; }
+
+	/// <summary>
+	/// نوع ورودی، که می‌تواند عددی یا متنی باشد.
+	/// </summary>
+	public enum ValueType
+	{
+		Number,
+		Text
+	}
+
+	/// <summary>
+	/// نوع مقدار ورودی.
+	/// </summary>
+	public ValueType InputValueType { get; set; }
+
+	/// <summary>
+	/// بررسی اینکه ورودی معتبر و در محدوده مشخص شده باشد.
+	/// </summary>
+	/// <returns>برمی‌کرداند که آیا ورودی معتبر است یا خیر.</returns>
+	public override bool Validate()
 	{
 		// بررسی اینکه ورودی خالی نباشد
 		if (string.IsNullOrEmpty(Value))
 		{
 			ValidationError = "ورودی الزامی است.";
-			return false;
+			return !Optional; // اگر اختیاری باشد، خطا را برگردانید
 		}
 
-		// بررسی عددی بودن
-		if (!int.TryParse(Value, out int result) || result < 0)
+		// فقط در صورتی که نوع ورودی Number باشد، بررسی کنیم
+		if (InputValueType == ValueType.Number)
 		{
-			ValidationError = "لطفاً یک عدد صحیح مثبت وارد کنید.";
-			return false;
-		}
-
-		// اکر ولیورنج تعیین شده باشد آن را پردازش کنید
-		if (!string.IsNullOrEmpty(ValueRange))
-		{
-			// استخراج حداقل و حداکثر از ValueRange
-			var rangeParts = ValueRange.Trim('[', ']').Split(',');
-			if (rangeParts.Length == 2 &&
-				int.TryParse(rangeParts[0], out int min) &&
-				int.TryParse(rangeParts[1], out int max))
+			if (!int.TryParse(Value, out int result) || result < 0)
 			{
-				// بررسی اینکه آیا مقدار در محدوده است
-				if (result < min || result > max)
+				ValidationError = "لطفاً یک عدد صحیح مثبت وارد کنید.";
+				return false;
+			}
+
+			// اگر ValueRange تعیین شده باشد، آن را پردازش کنید
+			if (!string.IsNullOrEmpty(ValueRange))
+			{
+				// استخراج حداقل و حداکثر از ValueRange
+				var rangeParts = ValueRange.Trim('[', ']').Split(',');
+				if (rangeParts.Length == 2 &&
+					int.TryParse(rangeParts[0], out int min) &&
+					int.TryParse(rangeParts[1], out int max))
 				{
-					ValidationError = $"ورودی باید در محدوده [{min},{max}] باشد.";
+					// بررسی اینکه آیا مقدار در محدوده است
+					if (result < min || result > max)
+					{
+						ValidationError = $"ورودی باید در محدوده [{min},{max}] باشد.";
+						return false;
+					}
+				}
+				else
+				{
+					ValidationError = "فرمت محدوده نامعتبر است.";
 					return false;
 				}
-			}
-			else
-			{
-				ValidationError = "فرمت محدوده نامعتبر است.";
-				return false;
 			}
 		}
 
 		return true;
 	}
 }
-
-
