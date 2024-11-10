@@ -11,31 +11,21 @@ namespace RealEstateLibrary.Models;
 /// </summary>
 public class ClickPage
 {
-	/// <summary>
-	/// لیست آیتم‌هایی که در این صفحه وجود دارند.
-	/// </summary>
-	public List<Item> Items { get; set; } = new List<Item>();
+	public string PageTitle { get; set; }
 
-	/// <summary>
-	/// اضافه کردن یک آیتم به لیست آیتم‌ها.
-	/// </summary>
-	/// <param name="item">آیتمی که باید به لیست اضافه شود.</param>
-	public void AddItem(Item item)
-	{
-		if (item == null)
-		{
-			throw new ArgumentNullException(nameof(item), "Item cannot be null.");
-		}
-		Items.Add(item);
-	}
+	public string PageDescription { get; set; }
 
-	/// <summary>
-	/// حذف یک آیتم از لیست آیتم‌ها.
-	/// </summary>
-	/// <param name="item">آیتمی که باید حذف شود.</param>
-	/// <returns>برمی‌کرداند که آیا حذف موفقیت‌آمیز بود یا خیر.</returns>
-	public bool RemoveItem(Item item)
+	// ترتیب نمایش آیتم‌ها در صفحه در صورتی که نیاز به مرتب‌سازی آیتم‌ها دارید
+	public int Order { get; set; }
+
+	// دسته‌بندی صفحه برای سازماندهی بهتر
+	public string Category { get; set; }
+
+	// دیکشنری برای نکهداری آیتم‌های منو
+	public Dictionary<string, MenuItem> Items { get; set; } = new Dictionary<string, MenuItem>();
+
+	public ClickPage()
 	{
-		return Items.Remove(item);
+		Items = new Dictionary<string, MenuItem>();
 	}
 }

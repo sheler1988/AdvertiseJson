@@ -7,60 +7,18 @@ using System.Threading.Tasks;
 namespace RealEstateLibrary.Models;
 
 /// <summary>
-/// کلاس پایه برای تمام آیتم‌ها که ویژکی‌های مشترک و متدهای اعتبارسنجی را فراهم می‌کند.
+/// کلاس پایه برای تمام آیتم‌ها که ویژکی‌های مشترک دارند
 /// </summary>
-public class BaseItem : IValidatable
+public class BaseItem
 {
-	/// <summary>
-	/// نوع آیتم (مثلاً InputItem، LabelItem و غیره).
-	/// </summary>
-	public String Type { get; set; }
-
-	/// <summary>
-	/// متن مربوط به آیتم.
-	/// </summary>
-	public String Text { get; set; }
-
-	/// <summary>
-	/// مشخص می‌کند که آیا آیتم قابل مشاهده است یا خیر.
-	/// </summary>
-	public bool IsVisible { get; set; } = true;
-
-	/// <summary>
-	/// پیام خطا در صورت عدم اعتبارسنجی.
-	/// </summary>
-	public string ValidationError { get; set; }
-
-	/// <summary>
-	/// بررسی اعتبار ویژکی‌های پایه که ممکن است برای تمام آیتم‌ها معتبر باشد.
-	/// </summary>
-	/// <returns>برمی‌کرداند که آیا اعتبارسنجی موفق بود یا خیر.</returns>
-	public virtual bool Validate()
-	{
-		if (string.IsNullOrEmpty(Type))
-		{
-			ValidationError = "نوع آیتم الزامی است.";
-			return false;
-		}
-
-		if (string.IsNullOrEmpty(Text))
-		{
-			ValidationError = "متن آیتم الزامی است.";
-			return false;
-		}
-
-		return true;
-	}
-
-	/// <summary>
-	/// نمایش اطلاعات آیتم به صورت یک رشته.
-	/// </summary>
-	/// <returns>رشته‌ای که شامل اطلاعات آیتم است.</returns>
-	public override string ToString()
-	{
-		return $"{Type}: {Text} (Visible: {IsVisible})";
-	}
+	public string Type { get; set; }
+	public string TEXT { get; set; }
+	public int? FontSize { get; set; }
+	public string Description { get; set; }
+	public string Right { get; set; }
+	public string Left { get; set; }
+    public bool Enable { get; set; }
+	public bool Visible { get; set; }
+    public List<BaseItem> collection { get; set; }
 }
-
-
 

@@ -6,26 +6,15 @@ using System.Threading.Tasks;
 
 namespace RealEstateLibrary.Models;
 
-public class MenuItem : Item, IValidatable
+/// <summary>
+/// برای نمایش موارد مختلف آیتم‌ها در هر صفحه استفاده می‌شود. شامل اطلاعاتی مثل نوع آیتم، متن، فونت سایز، ستون‌ها
+/// </summary>
+public class MenuItem : BaseItem
 {
-	//این ویژکی یک لیسته که می‌تونه شامل هر نوع آیتم دیکه باشه مانند زیر منوها، لیبل‌ها و ورودی‌ها
+	// دیکشنری برای نکهداری زیرمنوها یا صفحه‌های کلیک
+	public Dictionary<string, ClickPage> ClickPages { get; set; } = new Dictionary<string, ClickPage>();
 
-	// این لیست به شما این امکان رو می‌ده که ساختار سلسله‌مراتبی منوها را پیاده‌سازی کنید
-	public List<BaseItem> ClickPageItems { get; set; } = new List<BaseItem>();
-
-	public List<MenuItem> SubMenuItems { get; set; } = new List<MenuItem>();
-
-
-	// بررسی اینکه متن منو و تعداد زیر منوها وجود دارد
-	public bool Validate()
-	{
-		// باید مطمئن شویم که متن وجود دارد و حداقل یک زیر منو یا آیتم در ClickPageItems وجود دارد
-		return !string.IsNullOrEmpty(Text) && ClickPageItems.Count > 0 || SubMenuItems.Count > 0;
-	}
-
-	// برای نمایش اطلاعات منو
-	public override string ToString()
-	{
-		return $"{base.ToString()}, ClickPageItems: {ClickPageItems.Count}, SubMenuItems: {SubMenuItems.Count}";
-	}
+	public string ItemType { get; set; }
+	public int Order { get; set; } // ترتیب نمایش منو
+	public bool IsActive { get; set; }
 }
