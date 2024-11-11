@@ -7,8 +7,8 @@
       "RelativeMoniker": "D:0:0:{2E80B6E0-77C2-4BF6-99B0-7B002274E14D}|RealEstateConsoleApp\\RealEstateConsoleApp.csproj|solutionrelative:realestateconsoleapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4B9B54AB-BEF7-4909-9C2D-C6D02B703F45}|RealEstateLibrary\\RealEstateLibrary.csproj|f:\\myprojects\\advertisejson\\propertyadvertisesystem\\realestatelibrary\\models\\clickpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B9B54AB-BEF7-4909-9C2D-C6D02B703F45}|RealEstateLibrary\\RealEstateLibrary.csproj|solutionrelative:realestatelibrary\\models\\clickpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4B9B54AB-BEF7-4909-9C2D-C6D02B703F45}|RealEstateLibrary\\RealEstateLibrary.csproj|f:\\myprojects\\advertisejson\\propertyadvertisesystem\\realestatelibrary\\models\\interactivepage .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B9B54AB-BEF7-4909-9C2D-C6D02B703F45}|RealEstateLibrary\\RealEstateLibrary.csproj|solutionrelative:realestatelibrary\\models\\interactivepage .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4B9B54AB-BEF7-4909-9C2D-C6D02B703F45}|RealEstateLibrary\\RealEstateLibrary.csproj|f:\\myprojects\\advertisejson\\propertyadvertisesystem\\realestatelibrary\\models\\inputitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -51,15 +51,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ClickPage.cs",
-              "DocumentMoniker": "F:\\MyProjects\\AdvertiseJson\\PropertyAdvertiseSystem\\RealEstateLibrary\\Models\\ClickPage.cs",
-              "RelativeDocumentMoniker": "RealEstateLibrary\\Models\\ClickPage.cs",
-              "ToolTip": "F:\\MyProjects\\AdvertiseJson\\PropertyAdvertiseSystem\\RealEstateLibrary\\Models\\ClickPage.cs",
-              "RelativeToolTip": "RealEstateLibrary\\Models\\ClickPage.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Title": "InteractivePage .cs",
+              "DocumentMoniker": "F:\\MyProjects\\AdvertiseJson\\PropertyAdvertiseSystem\\RealEstateLibrary\\Models\\InteractivePage .cs",
+              "RelativeDocumentMoniker": "RealEstateLibrary\\Models\\InteractivePage .cs",
+              "ToolTip": "F:\\MyProjects\\AdvertiseJson\\PropertyAdvertiseSystem\\RealEstateLibrary\\Models\\InteractivePage .cs",
+              "RelativeToolTip": "RealEstateLibrary\\Models\\InteractivePage .cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAUwBsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T12:33:37.667Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-05T12:33:37.667Z"
             },
             {
               "$type": "Document",
@@ -69,10 +68,9 @@
               "RelativeDocumentMoniker": "RealEstateLibrary\\Models\\InputItem.cs",
               "ToolTip": "F:\\MyProjects\\AdvertiseJson\\PropertyAdvertiseSystem\\RealEstateLibrary\\Models\\InputItem.cs",
               "RelativeToolTip": "RealEstateLibrary\\Models\\InputItem.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAUwBMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T10:41:23.388Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-04T10:41:23.388Z"
             },
             {
               "$type": "Document",
@@ -82,10 +80,9 @@
               "RelativeDocumentMoniker": "RealEstateLibrary\\Models\\LabelItem.cs",
               "ToolTip": "F:\\MyProjects\\AdvertiseJson\\PropertyAdvertiseSystem\\RealEstateLibrary\\Models\\LabelItem.cs",
               "RelativeToolTip": "RealEstateLibrary\\Models\\LabelItem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T10:39:01.47Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-04T10:39:01.47Z"
             },
             {
               "$type": "Document",
@@ -95,10 +92,9 @@
               "RelativeDocumentMoniker": "RealEstateLibrary\\Models\\MenuItem.cs",
               "ToolTip": "F:\\MyProjects\\AdvertiseJson\\PropertyAdvertiseSystem\\RealEstateLibrary\\Models\\MenuItem.cs",
               "RelativeToolTip": "RealEstateLibrary\\Models\\MenuItem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T10:24:56.133Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-04T10:24:56.133Z"
             },
             {
               "$type": "Document",
@@ -108,10 +104,9 @@
               "RelativeDocumentMoniker": "RealEstateLibrary\\Models\\BaseItem.cs",
               "ToolTip": "F:\\MyProjects\\AdvertiseJson\\PropertyAdvertiseSystem\\RealEstateLibrary\\Models\\BaseItem.cs",
               "RelativeToolTip": "RealEstateLibrary\\Models\\BaseItem.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAswBUAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAswA8AAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T10:24:33.568Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-04T10:24:33.568Z"
             },
             {
               "$type": "Document",
@@ -121,7 +116,7 @@
               "RelativeDocumentMoniker": "RealEstateConsoleApp\\Program.cs",
               "ToolTip": "F:\\MyProjects\\AdvertiseJson\\PropertyAdvertiseSystem\\RealEstateConsoleApp\\Program.cs",
               "RelativeToolTip": "RealEstateConsoleApp\\Program.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAQwGAAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-04T11:31:53.874Z",
               "EditorCaption": ""

@@ -5,13 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace RealEstateLibrary.Models;
-
+/// <summary>
+/// یک نوع آیتم نمایشی است
+/// </summary>
 public class LabelItem : BaseItem
 {
-	// اندازه فونت برای LabelItem
 	public string Color { get; set; }
 	public string FontStyle { get; set; }
-	public string AdditionalDescription { get; set; }
+	public int? FontSize { get; set; }
+	public string AdditionalDescription { get; set; } // توضیحات اضافی
 }
-
-

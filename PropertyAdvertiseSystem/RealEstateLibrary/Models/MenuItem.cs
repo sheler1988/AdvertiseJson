@@ -7,14 +7,13 @@ using System.Threading.Tasks;
 namespace RealEstateLibrary.Models;
 
 /// <summary>
-/// برای نمایش موارد مختلف آیتم‌ها در هر صفحه استفاده می‌شود. شامل اطلاعاتی مثل نوع آیتم، متن، فونت سایز، ستون‌ها
+/// برای نمایش آیتم‌های مختلف منو و نکهداری صفحات کلیک در هر آیتم منو طراحی شده است
 /// </summary>
 public class MenuItem : BaseItem
 {
-	// دیکشنری برای نکهداری زیرمنوها یا صفحه‌های کلیک
-	public Dictionary<string, ClickPage> ClickPages { get; set; } = new Dictionary<string, ClickPage>();
+	// دیکشنری از صفحات تعاملی متصل به آیتم منو
+	public Dictionary<string, InteractivePage> ClickPages { get; set; } = new Dictionary<string, InteractivePage>();
 
 	public string ItemType { get; set; }
-	public int Order { get; set; } // ترتیب نمایش منو
 	public bool IsActive { get; set; }
 }
