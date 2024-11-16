@@ -20,7 +20,12 @@ public class BaseItem
 	public bool Visible { get; set; }
 	public int Order { get; set; } // ترتیب نمایش منو
 
-	// کالکشن لیستی از بیس آیتم ها برای نکهداری آیتم‌های مرتبط یا زیرآیتم‌ها
+	// لیستی از آیتم‌های مرتبط یا زیرآیتم‌ها را نکه می‌دارد
 	public List<BaseItem> collection { get; set; }
-}
 
+	// متد عمومی برای نمایش اطلاعات آیتم
+	public virtual void DisplayInfo()
+	{
+		Console.WriteLine($"Type: {Type}, TEXT: {TEXT}, Description: {Description}, Enable: {Enable}, Visible: {Visible}");
+	}
+}

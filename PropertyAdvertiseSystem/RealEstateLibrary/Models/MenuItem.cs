@@ -16,4 +16,20 @@ public class MenuItem : BaseItem
 
 	public string ItemType { get; set; }
 	public bool IsActive { get; set; }
+
+
+	// اورایدینک متد برای نمایش اطلاعات منو
+	// کاربردش برای تعریف منوها و نکهداری ارتباط بین منو و صفحات
+	public override void DisplayInfo()
+	{
+		base.DisplayInfo();// نمایش اطلاعات پایه
+
+		Console.WriteLine($"ItemType: {ItemType}, IsActive: {IsActive}");
+
+		// نمایش اطلاعات صفحات کلیک شده
+		foreach (var page in ClickPages)
+		{
+			page.Value.DisplayInfo();
+		}
+	}
 }

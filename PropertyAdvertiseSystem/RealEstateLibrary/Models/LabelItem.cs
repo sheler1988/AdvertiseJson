@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RealEstateLibrary.Models;
 /// <summary>
-/// یک نوع آیتم نمایشی است
+/// برای نمایش آیتم‌های برچسبی
 /// </summary>
 public class LabelItem : BaseItem
 {
@@ -14,4 +14,13 @@ public class LabelItem : BaseItem
 	public string FontStyle { get; set; }
 	public int? FontSize { get; set; }
 	public string AdditionalDescription { get; set; } // توضیحات اضافی
+
+	// اورایدینک متد برای نمایش اطلاعات برچسب
+	// کاربرد برای نمایش برچسب‌ها یا توضیحات در صفحات
+	public override void DisplayInfo()
+	{
+		base.DisplayInfo();
+
+		Console.WriteLine($"Color: {Color}, FontStyle: {FontStyle}, FontSize: {FontSize}, AdditionalDescription: {AdditionalDescription}");
+	}
 }
