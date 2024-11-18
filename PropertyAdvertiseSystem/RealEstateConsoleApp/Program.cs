@@ -17,235 +17,92 @@ namespace RealEstateLibrary
 		{
 			Console.OutputEncoding = System.Text.Encoding.UTF8;
 
-			// ایجاد یک لیست از بیس آیتم که می‌تواند انواع مختلفی از آیتم‌ها را نکهداری کند
-			List<BaseItem> items = new List<BaseItem>();
-
-			// ایجاد آیتم‌های مختلف
-			InteractivePage interactivePage = new InteractivePage
+			// ساخت ریشه درخت
+			MenuItem root = new MenuItem
 			{
-				Type = "Page",
-				TEXT = "صفحه اجاره آپارتمان",
-				Description = "این صفحه شامل اطلاعات اجاره آپارتمان‌ها است.",
-				PageTitle = "اجاره آپارتمان",
-				PageDescription = "این صفحه برای اجاره آپارتمان‌ها طراحی شده است.",
-				Category = "املاک"
+				Text = "منوی اصلی",
+				Type = "RootMenu",
+				ClickPage = new List<MenuItem>(),
 			};
 
-			MenuItem menuItem = new MenuItem
+
+			// ساخت زیرمنوها
+			MenuItem iteme1 = new MenuItem
 			{
-				Type = "Menu",
-				TEXT = "آپارتمان‌های اجاره‌ای",
-				ItemType = "Dropdown",
-				IsActive = true
+				Text = "اجاره",
+				Type = "SubMenu",
+				ClickPage = new List<MenuItem>(),
 			};
 
-			LabelItem labelItem = new LabelItem
+			MenuItem item2 = new MenuItem
 			{
-				Type = "Label",
-				TEXT = "ویژکی‌ها",
+				Text = "فروش",
+				Type = "SubMenu",
+				ClickPage = new List<MenuItem>(),
+			};
+
+			// اضافه کردن آیتم‌های داخل زیرمنوها
+			MenuItem subItem1 = new MenuItem
+			{
+				Text = "اجاره آپارتمان",
+				Type = "InteractivePage",
+			};
+
+			MenuItem subItem2 = new MenuItem
+			{
+				Text = "فروش ویلا",
+				Type = "InterzctivePage"
+			};
+
+			// اتصال آیتم‌ها به زیرمنوها
+			iteme1.ClickPage?.Add(subItem1);
+			item2.ClickPage?.Add(subItem2);
+
+			// اتصال زیرمنوها به ریشه درخت
+			root.ClickPage?.Add(iteme1);
+			root.ClickPage?.Add(item2);
+
+			// LabaleIteme اضافه کردن
+			LabelItem label = new LabelItem
+			{
+				Text = "ویژه",
 				Color = "Red",
 				FontStyle = "Bold",
-				FontSize = 12,
-				AdditionalDescription = "ویژکی‌های اضافی"
 			};
 
-			// اضافه کردن آیتم InputItem به لیست
-			InputItem inputItem = new InputItem
+			//
+			MenuItem labelAsMenuItem = new MenuItem
 			{
-				Type = "Input",
-				TEXT = "تعداد اتاق‌ها",
-				Placeholder = "تعداد اتاق‌ها را وارد کنید",
-				DefaultValue = "1",
-				ValueRange = "1-10",
-				Optional = true,
-				ValidationError = "لطفاً تعداد صحیح وارد کنید."
+				Text = label.Text,
+				Type = "LabelItem",
+				ClickPage = new List<MenuItem>(),
 			};
+			
+			// 
+			root.ClickPage?.Add(labelAsMenuItem);
 
-			// اضافه کردن همه آیتم‌ها به لیست
-			items.Add(interactivePage);
-			items.Add(menuItem);
-			items.Add(labelItem);
-			items.Add(inputItem);  // اضافه کردن InputItem
-
-			// نمایش اطلاعات همه آیتم‌ها با استفاده از پلی‌مورفیسم
-			// این طراحی باعث می‌شود که بتوان آیتم‌های مختلف را بدون نیاز به کدنویسی اضافی مدیریت کرد
-			foreach (var item in items)
-			{
-				item.DisplayInfo(); // اینجا متد دیسپلی اینفو داینامیکا فراخوانی می‌شود
-			}
+			DisplayTree(root, 0);
 		}
 
+		/// <summary>
+		/// متد بازکشتی برای نمایش ساختار درختی
+		/// </summary>
+		public static void DisplayTree(MenuItem item, int level)
+		{
+			string indent = new string(' ', level * 4);
+			Console.WriteLine($"{indent}- {item.Text} ({item.Type})");
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-		//string apiUrl = " آدرس API";
-
-		//var allItems = await GetDataFromApi(apiUrl); // دریافت داده‌ها از API
-
-		//var result = ProcessData(allItems); // پردازش داده‌ها
-
-		//GenerateJson(result); // تبدیل داده‌ها به جیسون و ذخیره آن
-
-		//Console.WriteLine("JSON file generated successfully.");
+			if (item.ClickPage != null)
+			{
+				foreach (var child in item.ClickPage)
+				{
+					DisplayTree(child, level + 1);
+				}
+			}
+		}
 	}
 
-		//// تابع برای دریافت داده‌ها از API
-		//static async Task<List<Dictionary<string, object>>> GetDataFromApi(string apiUrl)
-		//{
-		//	using (HttpClient client = new HttpClient())
-		//	{
-		//		HttpResponseMessage response = await client.GetAsync(apiUrl);
-		//		response.EnsureSuccessStatusCode();
-
-		//		string responseData = await response.Content.ReadAsStringAsync();
-
-		//		// فرض می‌کنیم داده‌ها به صورت یک لیست از دیکشنری‌ها باز می‌گردند
-		//		var data = JsonConvert.DeserializeObject<List<Dictionary<string, object>>>(responseData);
-
-		//		return data;
-		//	}
-		//}
-
-
-
-		//// تابع برای پردازش داده‌ها
-		//static List<BaseItem> ProcessData(List<Dictionary<string, object>> data)
-		//{
-		//	List<BaseItem> result = new List<BaseItem>();
-
-		//	// پردازش هر ردیف
-		//	foreach (var row in data)
-		//	{
-		//		if (row.ContainsKey("col1") && row["col1"].ToString() == "Menu")
-		//		{
-		//			MenuItem menuItem1 = new MenuItem();
-		//			menuItem1.ItemType = "MenuItem";
-		//			menuItem1.Visible = true;
-		//			menuItem1.Enable = true;
-		//			menuItem1.collection = new List<BaseItem>();
-
-		//			result.Add(menuItem1);
-
-		//			if (row.ContainsKey("col2") && row["col2"].ToString() == "Menu")
-		//			{
-
-		//				MenuItem menuItem2 = new MenuItem();
-		//				menuItem2.ItemType = "Menu";
-		//				menuItem2.Visible = true;
-		//				menuItem2.Enable = true;
-
-		//				InteractivePage clickPage = new InteractivePage();
-		//				clickPage.Items.Add("", menuItem2);
-		//				menuItem1.ClickPages.Add("", clickPage);
-		//			}
-		//		}
-
-		//			if (row.ContainsKey("col4") && row["col4"].ToString() == "Label")
-		//		{
-		//			LabelItem labelItem = new LabelItem();
-		//			labelItem.Type = "Label";
-		//			labelItem.Visible = true;
-		//			labelItem.Enable = true;
-
-		//			result.Add(labelItem);
-		//		}
-		//		if (row.ContainsKey("col4") && row["col4"].ToString() == "Input")
-		//		{
-		//			InputItem inputItem = new InputItem();
-		//			inputItem.Type = "Input";
-		//			inputItem.Placeholder = "Enter value";
-		//			inputItem.DefaultValue = "0";
-		//			inputItem.ValueRange = "0-1000";
-		//			inputItem.Optional = false;
-		//			inputItem.ValidationError = "Please enter a valid number";
-
-		//			result.Add(inputItem);
-		//		}
-		//	}
-		//	return result;
-		//}
-
-		//// تابع برای تبدیل داده‌ها به فایل جیسون و ذخیره آن
-		//static void GenerateJson(List<BaseItem> allItems)
-		//{
-		//	string output = JsonConvert.SerializeObject(allItems, Formatting.Indented);
-		//	File.WriteAllText("output.json", output);
-		//}
 }
-
-
-
-//		static void Main(string[] args)
-//		{
-//			// نکته در اتصال به دیتابیس مطمئن شوید کانکشن استرینک شما صحیح است و به دیتابیس موردنظر دسترسی دارد
-//			string connectionString = "your_connection_string_here";
-
-//			// کوئری برای دریافت داده‌ها از دیتابیس
-//			string query = "SELECT * FROM Table1 INNER JOIN Table2 INNER JOIN Table3"; // باید اینجا کوئری مناسب رو وارد کنید
-
-//			// خواندن داده‌ها از دیتابیس
-//			var allItems = ReadData<BaseItem>(connectionString, query);
-
-//			// تبدیل داده‌ها به فایل جیسون
-//			GenerateJson(allItems);
-//		}
-
-//		// تابع برای خواندن داده‌ها از دیتابیس و تبدیل به شیء مورد نظر
-//		static List<T> ReadData<T>(string connectionString, string query) where T : new()
-//		{
-//			var data = new List<T>();
-
-//			using (SqlConnection connection = new SqlConnection(connectionString))
-//			{
-//				SqlCommand command = new SqlCommand(query, connection);
-//				connection.Open();
-
-//				using (SqlDataReader reader = command.ExecuteReader())
-//				{
-//					while (reader.Read())
-//					{
-//						var item = new T();
-//						foreach (var property in typeof(T).GetProperties())
-//						{
-//							if (reader[property.Name] != DBNull.Value)
-//							{
-//								property.SetValue(item, reader[property.Name]);
-//							}
-//						}
-//						data.Add(item);
-//					}
-//				}
-//			}
-//			return data;
-//		}
-
-//		static void GenerateJson(List<BaseItem> allItems)
-//		{
-//			// در اینجا شما می‌توانید داده‌های دریافتی را به JSON تبدیل کنید
-//			string output = JsonConvert.SerializeObject(allItems, Formatting.Indented);
-//			File.WriteAllText("output.json", output);
-//			Console.WriteLine("Data successfully written to output.json");
-//		}
-//	}
-//}
-
-
 
 
 //public void generateJson(string[] args)
@@ -355,21 +212,4 @@ namespace RealEstateLibrary
 //	}
 
 //}
-
-
-
-
-
-
-
-
-
-//read dataa class(from json)
-
-//MenuItem menu = new MenuItem();
-//menu.Text = "Apple";
-//menu.IsVisible = false;
-
-//string json = JsonConvert.SerializeObject(menu);
-
 

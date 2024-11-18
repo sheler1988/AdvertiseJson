@@ -7,29 +7,11 @@ using System.Threading.Tasks;
 namespace RealEstateLibrary.Models;
 
 /// <summary>
-/// برای نمایش آیتم‌های مختلف منو و نکهداری صفحات کلیک در هر آیتم منو طراحی شده است
+/// نمایش یک آیتم منو با امکان کلیک و رفتن به صفحه دیکر 
 /// </summary>
 public class MenuItem : BaseItem
 {
-	// دیکشنری از صفحات تعاملی متصل به آیتم منو
-	public Dictionary<string, InteractivePage> ClickPages { get; set; } = new Dictionary<string, InteractivePage>();
-
-	public string ItemType { get; set; }
+	public string? ItemType { get; set; }
 	public bool IsActive { get; set; }
-
-
-	// اورایدینک متد برای نمایش اطلاعات منو
-	// کاربردش برای تعریف منوها و نکهداری ارتباط بین منو و صفحات
-	public override void DisplayInfo()
-	{
-		base.DisplayInfo();// نمایش اطلاعات پایه
-
-		Console.WriteLine($"ItemType: {ItemType}, IsActive: {IsActive}");
-
-		// نمایش اطلاعات صفحات کلیک شده
-		foreach (var page in ClickPages)
-		{
-			page.Value.DisplayInfo();
-		}
-	}
+	public List<MenuItem>? ClickPage { get; set; }
 }
