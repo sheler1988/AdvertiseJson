@@ -13,5 +13,10 @@ public class MenuItem : BaseItem
 {
 	public string? ItemType { get; set; }
 	public bool IsActive { get; set; }
+	public SidePositions? sidePositions { get; set; }
+
+	/// <summary>
+	/// لیستی از صفحات قابل کلیک که به این منو متصل هستند
+	/// </summary>
 	public List<MenuItem>? ClickPage { get; set; }
 }

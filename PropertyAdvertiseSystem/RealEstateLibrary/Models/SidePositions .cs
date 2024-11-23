@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace RealEstateLibrary.Models;
 
-public class Columns
+/// <summary>
+/// موقعیت‌های چپ و راست یک آیتم
+/// </summary>
+public class SidePositions
 {
 	public string? Right { get; set; }
 	public string? Left { get; set; }

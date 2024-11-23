@@ -20,7 +20,7 @@ namespace RealEstateLibrary
 			// ساخت ریشه درخت
 			MenuItem root = new MenuItem
 			{
-				Text = "منوی اصلی",
+				Text = "منوی اصلی املاک",
 				Type = "RootMenu",
 				ClickPage = new List<MenuItem>(),
 			};
@@ -29,14 +29,42 @@ namespace RealEstateLibrary
 			// ساخت زیرمنوها
 			MenuItem iteme1 = new MenuItem
 			{
-				Text = "اجاره",
+				Text = "اجاره مسکونی",
 				Type = "SubMenu",
 				ClickPage = new List<MenuItem>(),
 			};
 
-			MenuItem item2 = new MenuItem
+			MenuItem iteme2 = new MenuItem
 			{
-				Text = "فروش",
+				Text = "فروش مسکونی",
+				Type = "SubMenu",
+				ClickPage = new List<MenuItem>(),
+			};
+
+			MenuItem iteme3 = new MenuItem
+			{
+				Text = "فروش اداری و تجاری",
+				Type = "SubMenu",
+				ClickPage = new List<MenuItem>(),
+			};
+
+			MenuItem iteme4 = new MenuItem
+			{
+				Text = "اجاره اداری و تجاری",
+				Type = "SubMenu",
+				ClickPage = new List<MenuItem>(),
+			};
+
+			MenuItem iteme5 = new MenuItem
+			{
+				Text = "اجاره کوتاه مدت",
+				Type = "SubMenu",
+				ClickPage = new List<MenuItem>(),
+			};
+
+			MenuItem iteme6 = new MenuItem
+			{
+				Text = "پروژه های ساخت و ساز",
 				Type = "SubMenu",
 				ClickPage = new List<MenuItem>(),
 			};
@@ -50,17 +78,125 @@ namespace RealEstateLibrary
 
 			MenuItem subItem2 = new MenuItem
 			{
-				Text = "فروش ویلا",
-				Type = "InterzctivePage"
+				Text = "اجاره خانه و ویلا",
+				Type = "InteractivePage",
+			};
+
+			MenuItem subItem3 = new MenuItem
+			{
+				Text = "فروش آپارتمان",
+				Type = "InteractivePage"
+			};
+
+			MenuItem subItem4 = new MenuItem
+			{
+				Text = "فروش خانه و ویلا",
+				Type = "InteractivePage"
+			};
+
+			MenuItem subItem5 = new MenuItem
+			{
+				Text = "فروش زمین کلنکی",
+				Type = "InteractivePage"
+			};
+
+			MenuItem subItem6 = new MenuItem
+			{
+				Text = "فروش دفترکار؛ اتاق اداری و مطب",
+				Type = "InteractivePage"
+			};
+
+			MenuItem subItem7 = new MenuItem
+			{
+				Text = "فروش مغازه و غرفه",
+				Type = "InteractivePage"
+			};
+
+			MenuItem subItem8 = new MenuItem
+			{
+				Text = "فروش صنعتی؛ اتاق کشاورزی و تجاری",
+				Type = "InteractivePage"
+			};
+
+			MenuItem subItem9 = new MenuItem
+			{
+				Text = "اجاره دفترکار؛ اتاق اداری و مطب",
+				Type = "InteractivePage"
+			};
+
+			MenuItem subItem10 = new MenuItem
+			{
+				Text = "اجاره مغازه و غرفه",
+				Type = "InteractivePage"
+			};
+
+			MenuItem subItem11 = new MenuItem
+			{
+				Text = "اجاره صنعتی؛ اتاق کشاورزی و تجاری",
+				Type = "InteractivePage"
+			};
+
+			MenuItem subItem12 = new MenuItem
+			{
+				Text = "اجاره کوتاه مدت آپارتمان و سوئیت",
+				Type = "InteractivePage"
+			};
+
+			MenuItem subItem13 = new MenuItem
+			{
+				Text = "اجاره کوتاه مدت ویلا و باغ ",
+				Type = "InteractivePage"
+			};
+
+			MenuItem subItem14 = new MenuItem
+			{
+				Text = "اجاره کوتاه مدت دفترکار و فضای آموزشی",
+				Type = "InteractivePage"
+			};
+
+			MenuItem subItem15 = new MenuItem
+			{
+				Text = "پروژه مشارکت در ساخت",
+				Type = "InteractivePage"
+			};
+
+			MenuItem subItem16 = new MenuItem
+			{
+				Text = "پروژه پیش فروش",
+				Type = "InteractivePage"
 			};
 
 			// اتصال آیتم‌ها به زیرمنوها
 			iteme1.ClickPage?.Add(subItem1);
-			item2.ClickPage?.Add(subItem2);
+			iteme1?.ClickPage?.Add(subItem2);
+
+			iteme2.ClickPage?.Add(subItem3);
+			iteme2?.ClickPage?.Add(subItem4);
+			iteme2?.ClickPage?.Add(subItem5);
+			
+			iteme3?.ClickPage?.Add(subItem6);
+			iteme3?.ClickPage?.Add(subItem7);
+			iteme3?.ClickPage?.Add(subItem8);
+
+			iteme4?.ClickPage?.Add(subItem9);
+			iteme4?.ClickPage?.Add(subItem10);
+			iteme4?.ClickPage?.Add(subItem11);
+
+			iteme5?.ClickPage?.Add(subItem12);
+			iteme5?.ClickPage?.Add(subItem13);
+			iteme5?.ClickPage?.Add(subItem14);
+
+			iteme6?.ClickPage?.Add(subItem15);
+			iteme6?.ClickPage?.Add(subItem16);
+
 
 			// اتصال زیرمنوها به ریشه درخت
 			root.ClickPage?.Add(iteme1);
-			root.ClickPage?.Add(item2);
+			root.ClickPage?.Add(iteme2);
+			root.ClickPage?.Add(iteme3);
+			root.ClickPage?.Add(iteme4);
+			root.ClickPage?.Add(iteme5);
+			root.ClickPage?.Add(iteme6);
 
 			// LabaleIteme اضافه کردن
 			LabelItem label = new LabelItem
@@ -105,67 +241,6 @@ namespace RealEstateLibrary
 }
 
 
-//public void generateJson(string[] args)
-//{
-//	List<object> result = new List<object>();
-
-//	DataTable data = new DataTable();
-
-//	//create 4 columns
-//	data.Columns.Add("col1", typeof(string));
-//	data.Columns.Add("col2", typeof(string));
-//	data.Columns.Add("col3", typeof(string));
-//	data.Columns.Add("col4", typeof(string));
-
-//	//create 7 rows
-//	DataRow dr1 = data.NewRow();
-//	dr1["col1"] = "Menu";
-//	dr1["col2"] = "";
-//	dr1["col3"] = "";
-//	dr1["col4"] = "";
-//	data.Rows.Add(dr1);
-
-//	DataRow dr2 = data.NewRow();
-//	dr2["col1"] = "Menu";
-//	dr2["col2"] = "Menu";
-//	dr2["col3"] = "";
-//	dr2["col4"] = "";
-//	data.Rows.Add(dr2);
-
-//	DataRow dr3 = data.NewRow();
-//	dr3["col1"] = "Menu";
-//	dr3["col2"] = "Menu";
-//	dr3["col3"] = "Menu";
-//	dr3["col4"] = "";
-//	data.Rows.Add(dr3);
-
-//	DataRow dr4 = data.NewRow();
-//	dr4["col1"] = "Menu";
-//	dr4["col2"] = "Menu";
-//	dr4["col3"] = "Menu";
-//	dr4["col4"] = "Label";
-//	data.Rows.Add(dr4);
-
-//	DataRow dr5 = data.NewRow();
-//	dr5["col1"] = "Menu";
-//	dr5["col2"] = "Menu";
-//	dr5["col3"] = "Menu";
-//	dr5["col4"] = "Label";
-//	data.Rows.Add(dr5);
-
-//	DataRow dr6 = data.NewRow();
-//	dr6["col1"] = "Menu";
-//	dr6["col2"] = "Menu";
-//	dr6["col3"] = "Menu";
-//	dr6["col4"] = "Label";
-//	data.Rows.Add(dr6);
-
-//	DataRow dr7 = data.NewRow();
-//	dr7["col1"] = "Menu";
-//	dr7["col2"] = "Menu";
-//	dr7["col3"] = "Menu";
-//	dr7["col4"] = "Input";
-//	data.Rows.Add(dr7);
 
 
 //	foreach (DataRow row in data.Rows)
