@@ -12,7 +12,6 @@ namespace RealEstateLibrary.Models;
 public class InteractivePage : BaseItem
 {
 	public string? PageTitle { get; set; } // عنوان صفحه
-
 	public string? PageDescription { get; set; } // توضیح صفحه
 	public string? Category { get; set; } // دسته‌بندی صفحه
 }
