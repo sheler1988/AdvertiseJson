@@ -1,0 +1,127 @@
+{
+  "Text": "منوی اصلی املاک",
+  "Type": "RootMenu",
+  "ClickPage": [
+    {
+      "Text": "اجاره مسکونی",
+      "Type": "SubMenu",
+      "ClickPage": [
+        {
+          "Text": "اجاره آپارتمان",
+          "Type": "InteractivePage",
+          "ClickPage": null
+        },
+        {
+          "Text": "اجاره خانه و ویلا",
+          "Type": "InteractivePage",
+          "ClickPage": null
+        }
+      ]
+    },
+    {
+      "Text": "فروش مسکونی",
+      "Type": "SubMenu",
+      "ClickPage": [
+        {
+          "Text": "فروش آپارتمان",
+          "Type": "InteractivePage",
+          "ClickPage": null
+        },
+        {
+          "Text": "فروش خانه و ویلا",
+          "Type": "InteractivePage",
+          "ClickPage": null
+        },
+        {
+          "Text": "فروش زمین کلنکی",
+          "Type": "InteractivePage",
+          "ClickPage": null
+        }
+      ]
+    },
+    {
+      "Text": "فروش اداری و تجاری",
+      "Type": "SubMenu",
+      "ClickPage": [
+        {
+          "Text": "فروش دفترکار؛ اتاق اداری و مطب",
+          "Type": "InteractivePage",
+          "ClickPage": null
+        },
+        {
+          "Text": "فروش مغازه و غرفه",
+          "Type": "InteractivePage",
+          "ClickPage": null
+        },
+        {
+          "Text": "فروش صنعتی؛ اتاق کشاورزی و تجاری",
+          "Type": "InteractivePage",
+          "ClickPage": null
+        }
+      ]
+    },
+    {
+      "Text": "اجاره اداری و تجاری",
+      "Type": "SubMenu",
+      "ClickPage": [
+        {
+          "Text": "اجاره دفترکار؛ اتاق اداری و مطب",
+          "Type": "InteractivePage",
+          "ClickPage": null
+        },
+        {
+          "Text": "اجاره مغازه و غرفه",
+          "Type": "InteractivePage",
+          "ClickPage": null
+        },
+        {
+          "Text": "اجاره صنعتی؛ اتاق کشاورزی و تجاری",
+          "Type": "InteractivePage",
+          "ClickPage": null
+        }
+      ]
+    },
+    {
+      "Text": "اجاره کوتاه مدت",
+      "Type": "SubMenu",
+      "ClickPage": [
+        {
+          "Text": "اجاره کوتاه مدت آپارتمان و سوئیت",
+          "Type": "InteractivePage",
+          "ClickPage": null
+        },
+        {
+          "Text": "اجاره کوتاه مدت ویلا و باغ ",
+          "Type": "InteractivePage",
+          "ClickPage": null
+        },
+        {
+          "Text": "اجاره کوتاه مدت دفترکار و فضای آموزشی",
+          "Type": "InteractivePage",
+          "ClickPage": null
+        }
+      ]
+    },
+    {
+      "Text": "پروژه های ساخت و ساز",
+      "Type": "SubMenu",
+      "ClickPage": [
+        {
+          "Text": "پروژه مشارکت در ساخت",
+          "Type": "InteractivePage",
+          "ClickPage": null
+        },
+        {
+          "Text": "پروژه پیش فروش",
+          "Type": "InteractivePage",
+          "ClickPage": null
+        }
+      ]
+    },
+    {
+      "Text": "ویژه",
+      "Type": "LabelItem",
+      "ClickPage": []
+    }
+  ]
+}
